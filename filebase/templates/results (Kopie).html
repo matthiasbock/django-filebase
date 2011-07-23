@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block h1 %}New Files{% endblock %}
+
+{% block content %}
+<font size=2>
+<table border=1 cellpadding=7 cellspacing=7>
+	<tr>
+		<th></th>
+		<th>Name</th>
+		<th>Erstellt</th>
+		<th>Letzter Zugriff</th>
+		<th>Letzte &Auml;nderung</th>
+		<th>Bytes</th>
+		<th>MD5</th>
+		<th>MIME</th>
+	</tr>
+{% for f in files %}
+	<tr>
+		<td><!--Icon--></td>
+		<td>{{ f.name }}</td>
+		<td>{{ f.created }}</td>
+		<td>{{ f.lastaccess }}</td>
+		<td>{{ f.lastmodification }}</td>
+		<td>{{ f.content.bytes }}</td>
+		<td>{{ f.content.md5 }}</td>
+		<td>{{ f.content.mime }}</td>
+	</tr>
+{% endfor %}
+</table>
+</font>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "main.html" %}
+
+{% block h1 %}Upgrade DB - Folder scan{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+
+<table border=0>
+	<tr>
+		<td>Path: <input name=path type=edit value="/tmp" style="width:320px;" /></td>
+	</tr>
+	<tr>
+		<td><hr/></td>
+	</tr>
+	<tr>
+		<td><input name=recursive type=checkbox checked /> Recurse subdirectories</td>
+	</tr>
+	<tr>
+		<td><input name=directories type=checkbox /> Save folder structure</td>
+	</tr>
+	<tr>
+		<td><input name=files type=checkbox checked /> Save new files</td>
+	</tr>
+	<tr>
+		<td><input name=adler32 type=checkbox checked /> Generate Adler32 checksums</td>
+	</tr>
+	<tr>
+		<td><input name=thumbnails type=checkbox checked /> Save thumbnails</td>
+	</tr>
+	<tr>
+		<td><hr/></td>
+	</tr>
+	<tr>
+		<td align=right><input type=submit value="Start scanning ..."/></td>
+	</tr>
+</table>
+
+</form>
+
+{% endblock %}

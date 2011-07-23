@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+
+{% block content %}
+<iframe id=box1 src="filesystem">Support for frames required.</iframe>
+
+<iframe id=box2 src="database">Support for frames required.</iframe>
+
+<script language="JavaScript">
+function rename() {
+	window.prompt("Datei umbenennen in:","");
+	}
+</script>
+
+<table class=menu cellspacing=0>
+	<tr>
+		<td class=red>3</td>
+		<td onClick="download();">Abrufen</td>
+		<td class=menuspacer />
+		<td class=red>4</td>
+		<td onClick="edit();">Bearbeiten</td>
+		<td class=menuspacer />
+		<td class=red>5</td>
+		<td onClick="copy();">Kopieren</td>
+		<td class=menuspacer />
+		<td class=red>6</td>
+		<td onClick="rename();">Umbenennen</td>
+		<td class=menuspacer />
+		<td class=red>7</td>
+		<td onClick="newfolder();">Neuer Ordner</td>
+		<td class=menuspacer />
+	</tr>
+</table>
+
+{% endblock %}
