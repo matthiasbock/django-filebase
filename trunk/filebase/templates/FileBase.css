@@ -1,0 +1,84 @@
+body		{
+		color:	#ffffff;
+		background: #000000;
+		}
+h1		{
+		color: #aaaa00;
+		text-align: center;
+		}
+
+#box1		{
+		position: absolute;
+		top:10%;
+		left:5%;
+		width: 42%;
+		height: 80%;
+		overflow: scroll;
+		border: none;
+		}
+#box2		{
+		position:absolute;
+		top:10%;
+		left:54%;
+		width: 42%;
+		height: 80%;
+		overflow: scroll;
+		border: none;
+		}
+
+table.menu	{
+		font-family: Monospace;
+		font-size: 10pt;
+		color:	#0000aa;
+		background-color: #aaaaaa;
+		border: 0px none #000000;
+		position: absolute;
+		left: 5%;
+		top: 92%;
+		width: auto;
+		height: auto;
+		}
+td.red		{
+		color:	#ff5555;
+		background-color: #000000;
+		}
+td.menuspacer	{
+		width: 5px;
+		background-color: #000000;
+		}
+
+table.norton	{
+		font-family: Monospace;
+		font-size: 10pt;
+		font-weight: bold;
+		color:	#ffffff;
+		background-color: #0000aa;
+		border-color: #ffffff;
+		border-style: double;
+		}
+th.norton	{
+		color: #55ff55;
+		border-top: none;
+		border-left: none;
+		border-right: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+		}
+tr.norton:hover	{
+		background-color: #00aaaa;
+		cursor: pointer;
+		}
+td.norton	{
+		color: #ffffff;
+		border-top: none;
+		border-left: none;
+		border-right: 1px solid #ffffff;
+		border-bottom: none;
+		}
+td.selected	{
+		color: #ffffff;
+		border-top: 1px solid #ffffff;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		}
+

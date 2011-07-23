@@ -1,0 +1,47 @@
+<link href="/FileBase.css" rel="stylesheet" type="text/css"/>
+
+<table class=norton cellpadding=6 cellspacing=0>
+	<tr>
+		<th class=norton>Name</th>
+		<th class=norton>Size</th>
+		<th class=norton>Date</th>
+		<th class=norton>Time</th>
+	</tr>
+{% for key,value in box.items %}
+	{% if key == "Folders" %}
+		{% if path != "/" %}
+			<tr class=norton onClick="javascript:location.href='.?path=..';">
+				<td class=norton>..</td>
+				<td class=norton style="padding:2px;" align=center>&raquo;PARENT&laquo;</td>
+				<td class=norton>bla</td>
+				<td class=norton>bla</td>
+			</tr>
+		{% endif %}
+		{% for Folder in value %}
+			<tr class=norton onClick="javascript:location.href='.?path={{ Folder }}';">
+				<td class=norton>{{ Folder }}</td>
+				<td class=norton style="padding:2px;">&raquo;SUB-DIR&laquo;</td>
+				<td class=norton>bla</td>
+				<td class=norton>bla</td>
+			</tr>
+		{% endfor %}
+	{% endif %}
+	{% if key == "Files" %}
+		{% for File in value %}
+			<tr class=norton>
+				<td class=norton>{{ File }}</td>
+				<td class=norton>bla</td>
+				<td class=norton>bla</td>
+				<td class=norton>bla</td>
+			</tr>
+		{% endfor %}
+	{% endif %}
+{% endfor %}
+	<tr>
+		<td class=selected>bla</td>
+		<td class=selected>bla</td>
+		<td class=selected>bla</td>
+		<td class=selected>bla</td>
+	</tr>
+</table>
+
