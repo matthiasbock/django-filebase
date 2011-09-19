@@ -14,7 +14,7 @@ DATABASES = {
 		'ENGINE':	'mysql',
 		'NAME':		'django-filebase',
 		'USER': 	'Django',
-		'PASSWORD':	'Django-PW',
+		'PASSWORD':	'',
 		'HOST':		'',
 		'PORT':		'',
 		}
