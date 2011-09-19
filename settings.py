@@ -4,26 +4,24 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Matthias Bock', 'matthias.bock@hu-berlin.de'),
+    ('webmaster', 'webmaster@localhost'),
 )
 
 MANAGERS = ADMINS
 
-from Django.globals import *
-
 DATABASES = {
-   FileBaseDB: {
-        'ENGINE':	'django.db.backends.mysql',
-        'NAME':		FileBaseDB,
-        'USER': 	'Django',
-        'PASSWORD':	'your Django password',
-        'HOST':		'',
-        'PORT':		'',
+	'django-filebase': {
+		'ENGINE':	'mysql',
+		'NAME':		'django-filebase',
+		'USER': 	'Django',
+		'PASSWORD':	'Django-PW',
+		'HOST':		'',
+		'PORT':		'',
+		}
 	}
-}
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '2*n=_g9_(1x@%+d$p(+0cr_naa_v8@yt%@j6+-^%cdcowk^e%0'
+SECRET_KEY = ''
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
