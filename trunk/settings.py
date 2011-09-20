@@ -11,7 +11,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
 	'django-filebase': {
-		'ENGINE':	'mysql',
+		'ENGINE':	'django.db.backends.mysql',
 		'NAME':		'django-filebase',
 		'USER': 	'Django',
 		'PASSWORD':	'',
