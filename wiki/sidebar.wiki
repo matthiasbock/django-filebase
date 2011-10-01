@@ -1,2 +1,5 @@
  * [FileBase]
  * [Roadmap]
+ * [Preview]
+  * [jpg Previews in JPEGs]
+  * [exe Icons in Windows Executables]
