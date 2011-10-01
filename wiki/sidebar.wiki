@@ -1,5 +1,6 @@
  * [FileBase]
  * [Roadmap]
  * [Preview]
-  * [jpg Previews in JPEGs]
-  * [exe Icons in Windows Executables]
+  * [jpg JPEGs Previews]
+  * [ooo OpenOffice Documents]
+  * [exe Windows Executable Icons]
