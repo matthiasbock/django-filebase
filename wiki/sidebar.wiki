@@ -1,5 +1,7 @@
  * [FileBase]
  * [Roadmap]
+ * [FUSE]
+ * [WebDAV]
  * [Preview]
   * [jpg JPEGs Previews]
   * [ooo OpenOffice Documents]
